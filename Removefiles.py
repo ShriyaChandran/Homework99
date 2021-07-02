@@ -36,6 +36,7 @@ def main():
         print(path + "is not found")
         print("Total files deleted: " + deleted_files)
         print("Total folders deleted: " + deleted_folder)
+        deleted_files=deleted_files+1
     
 def remove_folder(path):
     if not shutil.rmtree(path):
